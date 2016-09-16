@@ -7,7 +7,7 @@ myapp.service('newservice',function(){
     
 });
 
-myapp.controller('myfirstctrl'['$scope','$filter','newservice','$routeParams','$resource',function($scope,$filter,newservice,$routeParams,$resource){
+myapp.controller('myfirstctrl',['$scope','$filter','newservice','$routeParams','$resource',function($scope,$filter,newservice,$routeParams,$resource){
                               
       $scope.id = $routeParams.id || '2';
       $scope.$watch('selected', function() {
