@@ -1,0 +1,28 @@
+  <div class="row">
+      <div class="col-md-2">
+<input type="text" ng-model="query"/>
+         <!-- <select ng-model="orederprop">
+              <option name="name"></option>
+          
+          </select>-->
+</div>
+      <div class="col-md-10">
+Sort By : <select ng-model="selected" ng-options="r.sort for r in sortorder" ng-change="onChanged(selected)"></select>   
+     <hr/>
+    <div ng-repeat="n in phones | filter:query "> 
+         <div class="panel panel-default">
+    
+    <div class="panel-body">
+        <span><img ng-src="{{n.images}}" alt="noimg" style="width:100px;float:left"></span>
+        <div class="primary" style="padding-top:5px" >
+            <a ng-href="#/forecast/{{n.id}}"> <h4>  {{n.name + ","}}</h4></a></div>
+        
+       <div>
+           <a ng-href="#/forecast/{{n.id}}"> {{n.snippets + "," + n.id}}</a>
+        </div>
+             </div>
+        </div>
+          </div>
+                   
+    </div>
+      </div>

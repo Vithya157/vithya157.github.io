@@ -1,0 +1,39 @@
+<div class="container-fluid">
+
+<h2>Phone Description</h2>
+<!--<hr />
+Days: <a href="#/forecast/2" ng-class="{ 'bg-primary': days === '2' }">2</a> | <a href="#/forecast/5" ng-class="{ 'bg-primary': days === '5' }">5</a> | <a href="#/forecast/7" ng-class="{ 'bg-primary': days === '7' }">7</a>
+<hr />
+<div ng-repeat="w in weatherResult.list">
+    <div class="row">
+        <div class="col-md-12">
+            <weather-report weather-day="w" convert-to-standard="convertToFahrenheit(daytimeTemp)" convert-to-date="convertToDate(dt)" date-format="MMMM d, y"></weather-report>
+        </div>
+    </div>
+</div>-->
+<div class="row">
+      <div class="col-md-12">
+<div > 
+         <div class="panel panel-default">
+    
+    <div class="panel-body">
+        <div ng-repeat="datas in myData" ng-show="datas.id=={{id}}">
+        <span><img ng-src="{{datas.images}}" alt="noimg" style="width:400px;float:left"></span>
+        <div class="primary" style="padding-top:5px">
+            <a href="#/forecast"> <h4>  {{datas.name + ","}}</h4></a></div>
+       <div> {{datas.snippets + ","}}
+        </div>
+        
+             </div>
+             </div>
+            <!-- <div>google {{id}}<div>{{myData}}</div></div>
+             <div ng-repeat="datas in myData" ng-show="datas.id=={{id}}">
+     {{datas.name}}
+ </div>   -->
+            <!--  <div>google <div>{{name}}</div></div>-->
+        </div>
+                   
+    </div>
+    </div>
+    </div>
+</div>
