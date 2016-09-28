@@ -1667,3 +1667,23 @@
             font-size: 225%;
             color: #FFF;
         }
+
+        @media only screen and (max-width: 500px) {
+    .jumbo {
+       display:none;
+    }
+		.container-fluid {
+   
+    padding: 60px 50px 60px 50px;
+
+}
+		        .c100 {left:0;
+        }
+		#portfolio {
+            padding-left:0px !important;
+            overflow:hidden;
+        }
+   .containergear {
+	   display:none;
+		}
+}
