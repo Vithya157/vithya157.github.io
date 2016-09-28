@@ -2,242 +2,588 @@
 <html lang="en">
 
 <head>
-
+    
+    <title>About Vithya | UI Developer &amp; Front End Developer</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="vithya portfolio">
-    <meta name="author" content="vithya portfolio">
-
-    <title>Vithya - Web Developer</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
-   
-    <!-- Button CSS -->
-     <link href="css/button.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta name="description" content="Portfolio of vithya, ">
+    <meta name="keywords" content="Fornt End Developer Portfolio, UI developer Portfolio">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css3/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css3/style_common.css" />
+    <script src="js/modernizr.js"></script>
+    <!--[if lt IE 9]> 
+			<style>
+				.rw-wrapper{ display: none; } 
+				.rw-sentence-IE{ display: block;  }
+			</style>
+		<![endif]-->
+    <style>
+        .no-cssanimations .rw-wrapper .rw-sentence span:first-child {
+            opacity: 1;
+        }
+        body {
+            font: 400 15px Lato, sans-serif;
+            line-height: 1.8;
+            color: #818181;
+        }
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        .jumbo {
+            /*background-color: #f4511e;*/
+            
+            background-color: #f4513e;
+            color: #fff;
+            padding: 50px 50px;
+            font-family: Montserrat, sans-serif;
+        }
+        .container-fluid {
+            padding: 60px 50px 60px 100px;
+        }
+        .bg-grey {
+            background-color: #f6f6f6;
+        }
+        .logo-small {
+            color: #f4511e;
+            font-size: 50px;
+        }
+        .logo {
+            color: #f4511e;
+            font-size: 200px;
+        }
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 10px;
+        }
+        .carousel-control.right,
+        .carousel-control.left {
+            background-image: none;
+            color: #f4511e;
+        }
+        .carousel-indicators li {
+            border-color: #f4511e;
+        }
+        .carousel-indicators li.active {
+            background-color: #f4511e;
+        }
+        .item h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            font-weight: 400;
+            font-style: italic;
+            margin: 70px 0;
+        }
+        .item span {
+            font-style: normal;
+        }
+        .panel {
+            border: 1px solid #f4511e;
+            border-radius: 0 !important;
+            transition: box-shadow 0.5s;
+        }
+        .panel:hover {
+            box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+        }
+        .panel-footer .btn:hover {
+            border: 1px solid #f4511e;
+            background-color: #fff !important;
+            color: #f4511e;
+        }
+        .panel-heading {
+            color: #fff !important;
+            background-color: #f4511e !important;
+            padding: 25px;
+            border-bottom: 1px solid transparent;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+        .panel-footer {
+            background-color: white !important;
+        }
+        .panel-footer h3 {
+            font-size: 32px;
+        }
+        .panel-footer h4 {
+            color: #aaa;
+            font-size: 14px;
+        }
+        .panel-footer .btn {
+            margin: 15px 0;
+            background-color: #f4511e;
+            color: #fff;
+        }
+        .navbar {
+            margin-bottom: 0;
+            /* background-color: #f4511e;*/
+            
+            background-color: #292847;
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+            font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #fff !important;
+        }
+        .navbar-nav li a:hover,
+        .navbar-nav li.active a {
+            color: #f4511e !important;
+            /* background-color: #fff !important;*/
+        }
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+        }
+        footer .glyphicon {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #f4511e;
+        }
+        .slideanim {
+            visibility: hidden;
+        }
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+        @-webkit-keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+            .btn-lg {
+                width: 100%;
+                margin-bottom: 35px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .logo {
+                font-size: 150px;
+            }
+        }
+        /* CSS3 keyframes */
+        
+        .view {
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+        }
+        .view p {
+            margin: 0;
+            box-sizing: content-box;
+            line-height: 1.2
+        }
+        .view-seventh h2 {
+            font-family: 'Oswald', Arial, sans-serif;
+            font-weight: normal;
+        }
+        .social a {
+            color: #ccc;
+        }
+        .social a:hover {
+            color: #333;
+        }
+        .contactsize {
+            font-size: 20px;
+        }
+        @media only screen and (max-width: 500px) {
+            .jumbo {
+                display: none;
+            }
+            .container-fluid {
+                padding: 60px 50px 60px 50px;
+            }
+            .c100 {
+                left: 0;
+            }
+            #portfolio {
+                padding-left: 0px !important;
+                overflow: hidden;
+            }
+            .containergear {
+                display: none;
+            }
+        }
+    </style>
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body onload="myGreet();" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>-->
+                <a class="navbar-brand" href="#myPage"> <i class="fa fa-play-circle"></i> Vithya Venkatasubbu</a>
+
+                <!-- <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
                     <i class="fa fa-play-circle"></i> Vithya Venkatasubbu
                 </a>
+            </div>-->
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
+            <!--  <div class="collapse navbar-collapse navbar-right navbar-main-collapse"> -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">ABOUT</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
+                    <li><a href="#services">SKILLS</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#download">PORTFOLIO</a>
+                    <li><a href="#portfolio">PORTFOLIO</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                    <!-- <li><a href="#pricing">PRICING</a></li>-->
+                    <li><a href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
+            <!-- </div>-->
         </div>
-        <!-- /.container -->
     </nav>
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Web Developer</h1>
-                        <p class="intro-text">I am a web developer who enjoy building everything from small business sites to rich interactive web apps.</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+
+
+    <div class="jumbo text-center">
+
+        <div class="text text-center">
+            I'm a Web Developer
+            <div class="fadingEffect"></div>
+        </div>​
+
+
+        <div class="rw-sentence">
+            <span>Who always love to make Website</span>
+
+            <div class="rw-words rw-words-1">
+                <span>Responsive.</span>
+                <span>User Friendly.</span>
+                <span>SEO Friendly.</span>
+                <span>Responsive.</span>
+                <span>User Friendly.</span>
+                <span>SEO Friendly.</span>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- Container (About Section) -->
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>Who Am I</h2>
+                <h4>My name is Vithya Venkatasubbu and I am a web developer who enjoys building everything from small business sites to rich interactive web applications.</h4>
+                <h4>I have rich and insightful experience working across multiple domains. I have great passion for developing clean and neat web interface. I’d love to develop website functionalities from scratch by hand coding.</h4>
+                <h2>What I Do</h2>
+                <h4>I specialize in front-end development (HTML5, XHTML, CSS3, JavaScript, jQuery, Ajax, JSON, JSP, Angular Js and Bootstrap) and proficient in developing responsive web applications.</h4>
+                <h4>I possess strong expertise in building web user Interface (UI) using HTML5, XHTML, CSS3, JavaScript, jQuery, Ajax, JSON, JSP, Angular Js and Bootstrap. </h4>
+                <h4>I have contributed to several different projects and also an active pro bono developer for the Taproot foundations. </h4>
+            </div>
+            <div class="col-sm-4">
+                <div class="containergear">
+                    <div class="gear" id="gear1"></div>
+                    <div class="gear" id="gear2"></div>
+                    <div class="gear" id="gear3"></div>
+                    <div class="gear" id="gear4"></div>
+                    <div class="gear" id="gear5"></div>
+                    <div class="gear" id="gear6"></div>
+                    <div class="gear" id="gear7"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (Services Section) -->
+    <div id="services" class="container-fluid text-center">
+        <h2>SKILLS</h2>
+
+        <div class="row slideanim">
+            <div class="col-sm-4">
+                <div class="c100 p90 dark big orange">
+                    <span>90%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+
+                <h4>HTML5</h4>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="c100 p90 dark big orange">
+                    <span>90%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+
+                <h4>CSS3</h4>
+            </div>
+            <div class="col-sm-4">
+                <div class="c100 p80 dark big orange">
+                    <span>80%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+
+                <h4>BOOTSTRAP</h4>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row slideanim">
+            <div class="col-sm-4">
+
+
+                <div class="c100 p80 dark big orange">
+                    <span>80%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+
+                <h4>JAVASCRIPT</h4>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="c100 p80 dark big orange">
+                    <span>80%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+
+                <h4>JQUERY</h4>
+            </div>
+            <div class="col-sm-4">
+                <div class="c100 p75 dark big orange">
+                    <span>75%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+
+                <h4>ANGULAR JS</h4>
+
+            </div>
+        </div>
+    </div>
+    <!-- Container (Portfolio Section) -->
+    <div id="portfolio" class="container-fluid text-center bg-grey">
+
+        <h2>Portfolio</h2>
+        <div class="main" id="parent" style="padding-bottom:50px;">
+            <!-- SEVENTH EXAMPLE -->
+            <div class="row text-center slideanim">
+                <div class="col-sm-4">
+                    <div class="view view-seventh" onclick="void(0)">
+                        <img src="images/alibaba.png" />
+                        <div class="mask">
+                            <h2>Alibaba.com (e commerce)</h2>
+                            <p>Alibaba.com is a B2B application i.e. a common gateway between buyers and suppliers. Scope of the Project is to implement a valuable and entertaining User Experience for the website. .
+                            </p>
+                            <a href="http://inspection.alibaba.com/?spm=a2700.7848340.0.0.pjUbaQ&tracelog=hd_serv_inspection" target="blank" class="info">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="view view-seventh" onclick="void(0)">
+                        <img src="images/prospect.png" />
+                        <div class="mask">
+                            <h2>E*TRADE PROSPECT SITE</h2>
+                            <p>A Prospect Site Redesign project is to convert the existing E*TRADE prospect pages to new Rich UI Web pages.</p>
+                            <a href="https://us.etrade.com/retirement/traditional_roth_ira?ploc=ret-nav" target="blank" class="info">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="view view-seventh" onclick="void(0)">
+                        <img src="images/etradeacc.png" />
+                        <div class="mask">
+                            <h2>E*TRADE ONLINE ACCOUNT ACTIVATION</h2>
+                            <p>This project is to Provide Multi lingual support for the following E*TRADE modules: Employee Stock Plan, Real Time Account Activation, and W-8 Ben Participant Certification process.</p>
+                            <a href="https://us.etrade.com/e/t/rtaa/ActivateBegin?Esp10" target="_blank" class="info">View More</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+            <div class="row text-center slideanim">
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center" style="padding-top:140px;">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About vithya</h2>
-                <p>5 years of experience as Web developer across multiple domains. i have passion for developing clean and neat web interface. Love to develop Website Functionality from scratch by hand Coding.</p>
-                
-                <p>Expertise  in building Web User Interface (UI) using HTML5, XHTML, CSS3, JavaScript, jQuery, Ajax, JSON, JSP, Angular Js and Bootstrap </p>
-                <p>Proficient in developing Responsive Web Applications.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center" style="padding-top:50px;">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>PORTFOLIO</h2>
-                    <p>E*TRADE PROSPECT SITE (Banking) - <a href="https://us.etrade.com/retirement/traditional_roth_ira?ploc=ret-nav" target="_blank">View Website </a> </p>
-                    <p>
-                       Project Summary: Prospect Site Redesign project is to convert the existing E*TRADE prospect pages to new Rich UI Web pages. Main aim of the project is to make page loading faster, SEO friendly and pages to be made easily editable for future changes. 
-
-                    </p>
-            
-            <span style="font-size:14px;font-weight:bold;"> Skills Used</span> : 
-                  <button type="button" class="btn btn-primary btn-lg outline">HTML5</button>
-                  <button type="button" class="btn btn-primary btn-lg outline">CSS3</button>
-                  <button type="button" class="btn btn-primary btn-lg outline">Javascript</button>
-  
-             <hr/>
-                <p>E*TRADE ONLINE ACCOUNT ACTIVATION (Banking) - <a href="https://us.etrade.com/e/t/rtaa/ActivateBegin?Esp10" target="_blank" >View Website </a></p>
-
-                 <p>
-                      Project Summary: This project is to Provide Multi lingual support for the following E*TRADE modules: Employee Stock Plan, Real Time Account Activation, and W-8 Ben Participant Certification process
-                    . Scope of the Project is to translate the content of some of the E*TRADE modules to other ten languages.
-
-                 </p>
-
-            <span style="font-size:14px;font-weight:bold;">Skills Used</span> : 
-                 <button type="button" class="btn btn-primary btn-lg outline">HTML</button>
-                 <button type="button" class="btn btn-primary btn-lg outline">CSS3</button>
-                 <button type="button" class="btn btn-primary btn-lg outline">Javascript</button>
-                 <button type="button" class="btn btn-primary btn-lg outline">jQuery</button>
-                 <button type="button" class="btn btn-primary btn-lg outline">XSL2.0</button>
-            <hr/>
-            <p style="margin-top:30px;">Alibaba.com (e commerce)</a>  - <a href="http://www.alibaba.com/" target="_blank">View Website</a></p>
-                 <p  >
-                     Project Summary:  Alibaba.com is a B2B application i.e. a common gateway between buyers and suppliers. Scope of the Project is to implement a valuable and entertaining User Experience for the website.
-                 </p>
-            </p>
-            
-          <span style="font-size:14px;font-weight:bold;">Skills Used</span> : 
-                <button type="button" class="btn btn-primary btn-lg outline">HTML</button>
-                <button type="button" class="btn btn-primary btn-lg outline">CSS</button>
-                <button type="button" class="btn btn-primary btn-lg outline">Javascript</button>
-                <button type="button" class="btn btn-primary btn-lg outline">YUI</button>
-          <hr/> 
-          <p >
-             <p style="margin-top:30px;">THE HINDU (Media) - <a href="http://www.thehindu.com/" target="_blank">View Website</a></p>
-                <p>
-                 Project Summary: This site is developed using Content management system - ESCENIC V4.3. News Gate which is online package system is integrated with Escenic for publication of articles.</p>
-          </p>
-         <span style="font-size:14px;font-weight:bold;">Skills Used</span> : 
-               <button type="button" class="btn btn-primary btn-lg outline">HTML</button>
-               <button type="button" class="btn btn-primary btn-lg outline">CSS</button>
-               <button type="button" class="btn btn-primary btn-lg outline">Javascript</button>
-               <button type="button" class="btn btn-primary btn-lg outline">JSTL</button>
-               <button type="button" class="btn btn-primary btn-lg outline">JSP</button>
-               <button type="button" class="btn btn-primary btn-lg outline">XHTML</button>
-                  <!-- <a href="http://www.thehindu.com"> <img src="img/Thehindu.png" width="600px" class="image1" height="300px"> </a>-->
-          <hr/>        
-          <p>
-                <p style="margin-top:30px;">THE BUSSINESSLINE (Media) - <a href="http://www.thehindubusinessline.com/" style="margin-top:30px;" target="_blank">View Website</a></p>
-               
-                    <p>
-                        Project Summary: Re-Launching of Business line site using Escenic, Exporting the articles from News Gate to Escenic using XSLT Transformation. Adopted Process model is Agile development model.</p>
-         </p>
-        <span style="font-size:14px;font-weight:bold;">Skills Used</span> : 
-              <button type="button" class="btn btn-primary btn-lg outline">HTML</button>
-              <button type="button" class="btn btn-primary btn-lg outline">CSS</button>
-              <button type="button" class="btn btn-primary btn-lg outline">Javascript</button>
-              <button type="button" class="btn btn-primary btn-lg outline">JSTL</button>
-              <button type="button" class="btn btn-primary btn-lg outline">JSP</button>
-              <button type="button" class="btn btn-primary btn-lg outline">XSL</button>
-        <hr/>
-          <p>
-                <p style="margin-top:30px;">SHE'S THE FIRST - <a href="http://campus.shesthefirst.org/" style="margin-top:30px;" target="_blank">View Website</a></p>
-               
-                    <p>
-                        Project Summary: Re-Launching of "She's the First" website using National builder. Create a new National builder custom Theme for the website.
-</p>
-         </p>
-        <span style="font-size:14px;font-weight:bold;">Skills Used</span> : 
-              <button type="button" class="btn btn-primary btn-lg outline">HTML5</button>
-              <button type="button" class="btn btn-primary btn-lg outline">CSS3</button>
-              <button type="button" class="btn btn-primary btn-lg outline">SASS</button>
-              <button type="button" class="btn btn-primary btn-lg outline">Bootstrap</button>
-              <button type="button" class="btn btn-primary btn-lg outline">WordPress</button>
-              
-
+                <div class="col-sm-4">
+                    <div class="view view-seventh" onclick="void(0)">
+                        <img src="images/business.png" />
+                        <div class="mask">
+                            <h2>THE BUSINESS LINE</h2>
+                            <p>Re-Launching of Business line site using Escenic, Exporting the articles from News Gate to Escenic using XSLT Transformation. Adopted Process model is Agile development model.</p>
+                            <a href="http://www.thehindubusinessline.com/" target="blank" class="info">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="view view-seventh" onclick="void(0)">
+                        <img src="images/thehindu.png" />
+                        <div class="mask">
+                            <h2>THE HINDU</h2>
+                            <p>This site is developed using Content management system - ESCENIC V4.3. News Gate which is online package system is integrated with Escenic for publication of articles.</p>
+                            <a href="http://www.thehindu.com/" target="_blank" class="info">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="view view-seventh" onclick="void(0)">
+                        <img src="images/ohorizons.png" />
+                        <div class="mask">
+                            <h2>OHorizons</h2>
+                            <p>Our projects focus on ensuring every community, no matter how remote or difficult to reach, has access to safe water.</p>
+                            <a href="https://ohorizons.squarespace.com/" target="blank" class="info">View More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center" style="padding-top:110px;">
+        </div>
+
+    </div>
+
+
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container-fluid bg-grey">
+        <h2>CONTACT</h2>
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Vithya</h2>
-                <p> If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here.</p>
-                <p><a href="mailto:vithya.swaminathan@gmail.com">vithya.swaminathan@gmail.com</a>
+            <div class="col-sm-12">
+
+                <p class="contactsize"><b>If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here.</b>
                 </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://www.linkedin.com/in/vithya-v-16834887?trk=nav_responsive_tab_profile" class="btn btn-default btn-lg" style="border:1px solid #42dca3;" target="_blank"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                    </li>
-                  
-                    <li>
-                        <a href="https://plus.google.com/113881695423714915694/posts" class="btn btn-default btn-lg" style="border:1px solid #42dca3;" target="_blank"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
+                <br/>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Arizona, US</p>
+
+                <p><span class="glyphicon glyphicon-envelope"></span> vithya.swaminathan@gmail.com</p>
+                <br/>
+                <ul class="social">
+                    <a href="https://plus.google.com/" target="blank"><i class="fa fa-google-plus-square fa-4x" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/vithya-v-16834887" target="blank"> <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+                    </a>
                 </ul>
             </div>
+
         </div>
-    </section>
-    
-      <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p> &copy; 2016 Vithya Venkatasubbu</p>
-        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p> &copy; 2016 Vithya Venkatasubbu</p>
     </footer>
-    <!-- Map Section-->
-    <div id="map" style="display:none;"></div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function() {
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
 
-    <!--Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+                        window.location.hash = hash;
+                    });
+                }
+            });
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+            $(window).scroll(function() {
+                $(".slideanim").each(function() {
+                    var pos = $(this).offset().top;
 
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        })
+
+        function myGreet() {
+            var x = document.getElementById("greet")
+            x.className = "show";
+            setTimeout(function() {
+                x.className = x.className.replace("show", "");
+            }, 3000);
+        }
+    </script>
+
+    <div id="greet">Hello, Nice to meet you!!!</div>
 </body>
 
 </html>
