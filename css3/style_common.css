@@ -1668,19 +1668,4 @@
             color: #FFF;
         }
 
-      @media only screen and (max-width: 480px) {
-            .jumbo,
-            .containergear,
-            .mobhide {
-                display: none;
-            }
-            .view {
-                border: none;
-            }
-            .view.mobview {
-                display: block;
-            }
-            .view .view-seventh.mobhide {
-                display: none;
-            }
-        }
+ 
