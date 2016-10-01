@@ -1671,6 +1671,8 @@
 
   .social a {
             color: #ccc;
+	  float:left;
+	  padding-right:5px;
         }
         .social a:hover {
             color: #333;
