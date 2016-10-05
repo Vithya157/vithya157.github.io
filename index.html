@@ -258,7 +258,7 @@
              
             </div>
            
-            <div class="collapse navbar-collapse auto" id="myNavbar">
+            <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#about">ABOUT</a>
                     </li>
@@ -624,7 +624,11 @@
                 });
             });
         })
-       
+       $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
         function myGreet() {
             var x = document.getElementById("greet")
             x.className = "show";
