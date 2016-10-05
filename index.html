@@ -624,7 +624,11 @@
                 });
             });
         })
-
+        $(document).ready(function () {
+        $(".navbar-nav li.trigger-collapse a").click(function(event) {
+          $(".navbar-collapse").collapse('hide');
+        });
+      });
         function myGreet() {
             var x = document.getElementById("greet")
             x.className = "show";
